@@ -1,0 +1,98 @@
+.create-teacher h1 {
+	padding: 0.5em 1em 1em 1em;
+}
+
+.timetable-entry {
+	margin-block: 2em;
+}
+.timetable-entry table {
+	margin: auto;
+	border-collapse: collapse;
+}
+
+.timetable-entry option {
+	padding: 0.5em 1em;
+	display: block;
+	font-size: 1.2rem;
+}
+
+.timetable-entry select {
+	padding: 0.5em 1em;
+	border: 1px solid var(--color-accent);
+	border-radius: 5px;
+	background-color: var(--color-bg);
+	color: var(--color-accent);
+	font-size: 1.2rem;
+}
+
+.timetable-entry td {
+	padding: 0.5em;
+}
+
+table {
+	overflow: hidden;
+}
+
+.timeTable tr:hover {
+	background-color: rgba(0, 204, 255, 0.041);
+}
+
+td,
+th {
+	position: relative;
+}
+.timeTable td:hover::after,
+.timeTable th:hover::after {
+	content: '';
+	position: absolute;
+	background-color: rgba(0, 204, 255, 0.041);
+	left: 0;
+	top: -5000px;
+	height: 10000px;
+	width: 100%;
+	z-index: -1;
+}
+
+.create-teacher input[type='text'] {
+	border: 1px solid grey;
+	border-radius: 10px;
+	font-size: 1.3rem;
+	background-color: var(--color-bg);
+	padding: 0.3em 1em;
+	width: 400px;
+}
+
+.create-teacher form {
+	padding: 0 7.8em;
+}
+.create-teacher form > label,
+.create-teacher form > select {
+	display: block;
+}
+.create-teacher form > span > select {
+	border: 1px solid grey;
+	background-color: var(--color-bg);
+	border-radius: 10px;
+	font-size: 1.3em;
+	margin-bottom: 1em;
+	padding: 0.3em 1em;
+}
+.create-teacher form label {
+	margin-top: 1em;
+	margin-left: 1.5em;
+	opacity: 0.5;
+	margin-bottom: 0.2em;
+	margin-right: 1em;
+}
+.create-teacher form > select + select {
+	margin-left: 2em;
+}
+
+.create-teacher th {
+	padding: 1em 0;
+}
+
+input:hover,
+input:focus {
+	outline: none;
+}

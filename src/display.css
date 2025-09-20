@@ -1,0 +1,153 @@
+
+
+
+table {
+	overflow: hidden;
+}
+
+.timeTable tr:hover {
+	background-color: rgba(0, 204, 255, 0.041);
+}
+.timeTable {
+	overflow-x: auto;
+	max-width: 100%;
+}
+
+
+@media screen and (max-width:1500px){
+.timeTable {
+	overflow-x: auto;
+	max-width: 1100px;
+}
+}
+
+@media screen and (max-width:1200px){
+.timeTable {
+	overflow-x: auto;
+	max-width: 900px;
+}
+}
+
+input:hover, input:focus{
+	outline:none
+}
+
+@media screen and (max-width: 900px) {
+.timeTable {
+		max-width: 75vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+.timeTable {
+		max-width: 88vw;
+	}
+}
+
+
+
+td,
+th {
+	position: relative;
+}
+.timetable td:hover::after,
+.timeTable th:hover::after {
+	content: '';
+	position: absolute;
+	background-color: rgba(0, 204, 255, 0.041);
+	left: 0;
+	top: -5000px;
+	height: 10000px;
+	width: 100%;
+	z-index: -1;
+}
+.teacher header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline: 2em;
+	margin-top: 3em;
+}
+
+.teacher header h2 {
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	margin-block: 0;
+}
+.teacher h3 {
+	margin: 0.5em 0;
+	margin-bottom: 3em;
+}
+
+.teacher .timeTable table {
+	font-size: 1.4rem;
+	font-weight: 200;
+	border-collapse: collapse;
+}
+@media print{
+	.teacher table{
+		font-weight: 300!important;
+	}
+}
+
+.teacher .timeTable table td,
+.teacher .timeTable th {
+	padding: 0.5em 2em;
+	text-align: center;
+}
+
+@media screen and (max-width:600px){
+.teacher .timeTable table {
+	font-size: 1.1rem;
+	font-weight: 200;
+	border-collapse: collapse;
+}
+
+.teacher .timeTable table td,
+.teacher .timeTable th {
+	padding: 0.5em 1.5em;
+	text-align: center;
+}
+.timeTable.specificTeacher tr>th{
+	padding-inline: 2.5em!important;
+}
+.timeTable.specificTeacher tr>td{
+	padding-block: .8em!important;
+}
+
+}
+
+
+.teacher .timeTable th {
+	opacity: 0.7;
+}
+
+@media print{
+.teacher .timeTable th {
+	opacity: 0.4!important;
+}
+}
+
+.teacher .timeTable td,
+.teacher .timeTable th {
+	border: 1px solid rgba(128, 128, 128, 0.164);
+}
+
+@media print{
+.teacher .timeTable td,
+.teacher .timeTable th {
+	border: 1px solid rgba(128, 128, 128, 1);
+}
+	
+}
+
+.teacher-actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.teacher-actions button + button {
+	margin-left: 1em;
+}
