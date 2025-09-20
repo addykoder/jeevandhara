@@ -5,7 +5,6 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './global.style';
 import useSidebarState, { sidebarStateContext } from './hooks/useSidebarState';
 import { Provider as StoreProvider } from 'react-redux';
-
 import store from './store/store';
 import axios from 'axios';
 import { useState } from 'react';
